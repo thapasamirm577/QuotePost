@@ -1,0 +1,57 @@
+.quote {
+  background-color: #162b2b;
+  color: white;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  margin: 3rem auto;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.quote p {
+  font-size: 1.5rem;
+  margin-top: -1rem;
+}
+
+.quote .figcaption {
+  font-size: 1rem;
+  text-align: right;
+  color: #a1e0e0;
+}
+.action{
+  text-align: end;
+}
+.action > button{
+  background-color: #162b2b;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #008080;
+}
+.action > button:first-child{
+  color: rgb(148, 187, 148);
+  font-weight: bolder;
+  font-size: 1.3rem;
+  transition: all 1s ease;
+}
+.action > button > .edit, 
+.action .delete{
+  visibility: hidden;
+  background-color: white;
+  color: #008080;
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+ 
+}
+
+.action > button:first-child:hover .edit,
+.action > button:last-child:hover .delete{
+  visibility: visible;
+  z-index: 9;
+
+}
+.action > button:last-child{
+  color: red;
+}

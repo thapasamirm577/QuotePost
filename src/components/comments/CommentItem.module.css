@@ -1,0 +1,44 @@
+.item {
+  margin: 1rem 0;
+  color: #4a5555;
+  font-size: 1.1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid teal;
+  text-align: start;
+}
+.item strong::after{
+  content: "";
+  border-bottom: 0.2rem solid #4a5555;
+  display: block;
+  width: 3rem;
+}
+.delete__comment{
+  float: right;
+  background-color: #e7f8f8;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: -1.8rem;
+}
+.delete__comment .delete{
+  visibility: hidden;
+  background-color: #008080;
+  color: white;
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+ 
+}
+.delete__comment:hover .delete{
+  visibility: visible;
+  z-index: 9;
+
+}
+.delete__comment{
+  color: red;
+}
+.delete__comment::after{
+  content: "";
+  display: table;
+  clear: both;
+}

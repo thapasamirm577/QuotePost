@@ -1,0 +1,118 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: fixed;
+  top: 10vh;
+  left: 10%;
+  width: 80%;
+  min-height: 12rem;
+  z-index: 100;
+  overflow: hidden;
+  background-color: white;
+}
+
+.header {
+  background: #008080;
+  padding: 1rem;
+}
+
+.header h2 {
+  margin: 0;
+  color: white;
+}
+
+.content {
+  padding: 1rem;
+}
+.content > p{
+  font-weight: bold;
+}
+
+.actions {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.delete-btn{
+  font: inherit;
+  border: 1px solid red;
+  background:red;
+  color: white;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.delete-btn:hover,
+.delete-btn:active {
+  background: rgb(241, 76, 76);
+  border-color: rgb(241, 76, 76);
+}
+
+.delete-btn:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    left: calc(50% - 20rem);
+    width: 40rem;
+  }
+}
+
+.form {
+  position: relative;
+  
+}
+
+.delete_form{
+  text-align: end;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+
+.control label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.control input,
+.control textarea {
+  font: inherit;
+  padding: 0.35rem;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  border: 1px solid #c1d1d1;
+  display: block;
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+.control input:focus,
+.control textarea:focus {
+  background-color: #cbf8f8;
+  outline-color: teal;
+}
+.noValidation{
+  color: red;
+  font-size: 1.1rem;
+}
+
+.actions {
+  text-align: right;
+}
+
+.actions button {
+  font-size: 1.25rem;
+}
